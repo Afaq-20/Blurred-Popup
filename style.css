@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("main.jpg");
+    background-size: cover;
+}
+
+.container h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.415);
+}
+
+.btn {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.active.container {
+    filter: blur(5px) brightness(0.8);
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background: url(wolfgang-hasselmann-Y-RDJrlKOtU-unsplash.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.308);
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.input {
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.popup-btn {
+    width: 30%;
+    padding: 6px 5px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    filter: invert(100%);
+}
+
+.active.popup-container {
+    visibility: hidden;
+}
